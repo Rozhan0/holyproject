@@ -1,3 +1,10 @@
+#default build directory
+build
+
+#main.c is now only used as a test code for libraries and has no functionality
+main.c
+
+#build stuffs
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
