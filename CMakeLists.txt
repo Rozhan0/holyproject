@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 
-project(holypoject C)
+project(holyproject C)
 
 add_subdirectory(database)
 
