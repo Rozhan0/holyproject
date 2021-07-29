@@ -44,9 +44,7 @@ void dump_database(database db) {
     from database structure to database file */
 
     FILE * file = fopen(db.path, "w");
-    printf("%ld %ld\n", sizeof(db.rows[0]), db.length);
     fwrite(db.rows, sizeof(db.rows[0]), db.length, file);
-    puts("fucked up");
     fclose(file);
 }
 
