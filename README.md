@@ -33,5 +33,5 @@ To test the project, create a main.c file and include libraries you want to test
 
 ---
 
-Project Link: [https://github.com/K3y-1/holy_project](https://github.com/K3y-1/holyproject)
+Project Link: [https://github.com/K3y-1/holyproject](https://github.com/K3y-1/holyproject)
 
