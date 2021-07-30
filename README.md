@@ -2,7 +2,8 @@
 
 ## About the project
 
-A todo list web app, written in C language.
+A todo list web app,<br/>
+with web server and backend written in C language.
 
 ## Todo list for project:
 
@@ -34,4 +35,3 @@ To test the project, create a main.c file and include libraries you want to test
 ---
 
 Project Link: [https://github.com/K3y-1/holyproject](https://github.com/K3y-1/holyproject)
-
