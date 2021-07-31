@@ -6,15 +6,18 @@
 #include <string.h>
 
 struct param {
-    char * key;
-    char * value;
+    char key[30];
+    char value[20];
 } typedef param;
 
-struct param_list {
+struct req_data {
     param * params;
+    char * path;
     unsigned short length;
-} typedef param_list;
+} typedef req_data;
 
 char * create_response(char * msg);
+int parse_query(char * query, req_data * pl);
+int parse_get_request(const char * request, req_data * pl);
 
 #endif
