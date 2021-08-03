@@ -14,7 +14,7 @@ char * create_response(char * msg) {
 int push_param(param * pr, req_data * data) {
     /* this function pushes a param structure to linked list
     inside req_data structure */
-    
+
     if(pr != 0 && data != 0) {
         if(data->param_list_top)
             data->param_list_top->next = pr;
@@ -51,11 +51,14 @@ int parse_get_request(const char * request, req_data * data) {
     /* this function parses a request to path and query.
     if query exists, it will be passed to parse_query */
 
-    char path[257] = {0};
-    char * querstion_mark = strchr(request, '?');
+    data->param_list_head = 0;
+    data->param_list_top = 0;
+    data->path = 0;
+    char path[64] = {0};
+    char * querstion_mark = memchr(request, '?', 80);
     if(querstion_mark) {
         *querstion_mark = ' ';
-        char query[257] = {0};
+        char query[129] = {0};
         sscanf(request, "GET %s %s ", path, query);
         if(parse_query(query, data) == 0) return 0;
     } else {
